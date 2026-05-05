@@ -255,7 +255,7 @@
 										"exec": [
 											"pm.test(\"API message: Contact was updated\", function () {\r",
 											"    var jsonData = pm.response.json();\r",
-											"    pm.expect(jsonData.value).to.eql(\"Contact was updated\");\r",
+											"    pm.expect(jsonData.message).to.eql(\"Contact was updated\");\r",
 											"});\r",
 											"\r",
 											""
@@ -314,7 +314,7 @@
 										"exec": [
 											"pm.test(\"Your test name\", function () {\r",
 											"    var jsonData = pm.response.json();\r",
-											"    pm.expect(jsonData.value).to.eql(\"Contact was deleted!\");\r",
+											"    pm.expect(jsonData.message).to.eql(\"Contact was deleted!\");\r",
 											"});"
 										],
 										"type": "text/javascript",
