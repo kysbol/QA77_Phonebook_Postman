@@ -293,7 +293,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"id\": \"{{id}}\",\r\n  \"name\": \"Test\",\r\n  \"lastName\": \"Muster\",\r\n  \"email\": \"muster@gm.com\",\r\n  \"phone\": \"123456789012345\",\r\n  \"address\": \"Rishon\",\r\n  \"description\": \"QA\"\r\n}",
+									"raw": "{\r\n   \"id\":\"{{id}}\",\r\n  \"name\": \"Kris\",\r\n  \"lastName\": \"Tomash\",\r\n  \"email\": \"Tom@gm.com\",\r\n  \"phone\": \"123456789012345\",\r\n  \"address\": \"Rishon\",\r\n  \"description\": \"QA\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
