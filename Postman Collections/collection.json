@@ -326,8 +326,22 @@
 									"listen": "prerequest",
 									"script": {
 										"id": "b69d584b-8eb2-4bde-b655-fe37fa925a18",
-										"exec": [],
-										"type": "text/javascript"
+										"exec": [
+											"pm.sendRequest({\r",
+											"    url: pm.environment.get(\"BaseURI\") + \"/v1/contacts\",\r",
+											"    method: \"GET\",\r",
+											"    headers: {\"Authorization\": pm.environment.get(\"token\")}\r",
+											"}, function (error, response) {\r",
+											"    if(error) {\r",
+											"        console.log(\"Error while request\")\r",
+											"    }\r",
+											"}\r",
+											"\r",
+											")"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
